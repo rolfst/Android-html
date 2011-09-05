@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test threads fibonacci</title>
+</head>
+<body>
+	<div id="result"></div>
+
+   <div class="outer" style="width: 400px; height: 400px; background-color:red;">
+  	<div class="inner" style="width: 200px; height: 200px; background-color: yellow;"></div>
+  </div>
+  <div>
+  <ul>
+  	<li class="outer">
+  		<a class="inner" href="#">move 1</a>
+  	</li>
+  	<li class="outer">
+  		<a class="inner" href="#">move 2</a>
+  	</li>
+  </ul>
+  </div>
+  <span id="outerText"></span>
+  <span id="innerText"></span>
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')
+	</script>
+   <script type="text/JavaScript">
+ //   $(document).ready(function(){
+   var outer = $('.outer');
+   outer.mouseover(function() {
+        $('#outerText').text('Handler for .mouseover() called.');
+      }).mouseout(function(){
+        $('#outerText').text('Handler for .mouseout() called.');
+    });
+
+
+
+ //   });
+  </script>
+
+</body>
+</html>
